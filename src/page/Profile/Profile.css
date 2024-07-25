@@ -1,0 +1,306 @@
+.profile-container {
+  display: flex;
+  margin-top: 100px;
+  padding: 0 6%;
+  width: 100%;
+}
+
+.profile-option {
+  background-color: #111111;
+  width: 23%;
+  padding: 15px;
+  box-sizing: border-box;
+  margin-right: 3%;
+  border-radius: 15px;
+  max-height: 400px;
+  min-height: 300px;
+}
+
+.profile-info,
+.watch-list,
+.favorite,
+.rating-option,
+.logout {
+  display: flex;
+  align-items: center;
+  font-size: 2rem;
+  margin: 0px;
+  gap: 20px;
+  padding: 10px 20px;
+  border-radius: 10px;
+  transition: background-color 0.3s ease;
+  cursor: pointer;
+}
+.profile-info:hover,
+.watch-list:hover,
+.favorite:hover,
+.rating-option:hover,
+.logout:hover {
+  background-color: #333;
+}
+
+.active {
+  background-color: #555;
+  color: white;
+}
+
+.account-info {
+  display: flex;
+}
+
+.avatar-profile {
+  width: 200px;
+  height: 200px;
+  margin-right: 50px;
+}
+
+.avatar-image {
+  border-radius: 50%;
+}
+
+.profile-details p {
+  font-size: 1.5rem;
+}
+.profile-content {
+  width: 74%;
+  padding: 20px;
+  box-sizing: border-box;
+  border-radius: 10px;
+  background-color: #111111;
+}
+
+.list-title {
+  font-size: 1.5rem;
+  color: red;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+.movie-list {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: start;
+  column-gap: 17px;
+}
+
+.item-movie {
+  width: 170px;
+  height: 290px;
+  margin-bottom: 20px;
+  background-color: #333333;
+  border-radius: 10px;
+}
+
+.movie-poster-item {
+  width: 170px;
+  height: 230px;
+  object-fit: cover;
+  margin-right: 10px;
+}
+
+.item-movie p {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin: 0;
+  width: 100%;
+  font-size: 1rem;
+  color: red;
+}
+.rate {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  justify-content: end !important;
+}
+
+.rate p {
+  margin-right: 10px;
+  font-size: 1rem;
+  color: white;
+}
+/* Media queries cho các kích thước màn hình khác nhau */
+@media (max-width: 1024px) {
+  .profile-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .profile-option {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .profile-content {
+    width: 100%;
+  }
+
+  .account-info {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .avatar-profile {
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+
+  .profile-details p {
+    font-size: 1.2rem;
+    text-align: center;
+  }
+
+  .item-movie {
+    width: 48%;
+    margin-bottom: 10px;
+  }
+
+  .item-movie p {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  .movie-list {
+    display: flex;
+    justify-content: space-between;
+  }
+  .item-movie {
+    width: 30%;
+    margin-bottom: 10px;
+  }
+  .movie-poster-item {
+    width: 100%;
+  }
+}
+
+@media (max-width: 800px) {
+  .profile-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .profile-option {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .profile-content {
+    width: 100%;
+  }
+
+  .account-info {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .avatar-profile {
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+
+  .profile-details p {
+    font-size: 1.2rem;
+    text-align: center;
+  }
+  .movie-list {
+    display: flex;
+    justify-content: space-between;
+  }
+  .item-movie {
+    width: 30%;
+    margin-bottom: 10px;
+  }
+  .movie-poster-item {
+    width: 100%;
+  }
+}
+
+@media (max-width: 500px) {
+  .profile-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .profile-option {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .profile-content {
+    width: 100%;
+  }
+
+  .account-info {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .avatar-profile {
+    width: 150px;
+    height: 150px;
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+
+  .profile-details p {
+    font-size: 1rem;
+    text-align: center;
+  }
+  .movie-list {
+    margin-bottom: 20px;
+  }
+
+  .item-movie {
+    width: 45%;
+    margin-bottom: 10px;
+  }
+  .item-movie p {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+}
+
+@media (max-width: 320px) {
+  .profile-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .profile-option {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .profile-content {
+    width: 100%;
+  }
+
+  .account-info {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .avatar-profile {
+    width: 100px;
+    height: 100px;
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+
+  .profile-details p {
+    font-size: 0.8rem;
+    text-align: center;
+  }
+
+  .item-movie {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  .item-movie p {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+}

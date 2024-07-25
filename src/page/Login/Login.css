@@ -1,0 +1,129 @@
+.login {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-image: url("../../assets/bg.png");
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+  font-family: Arial, sans-serif;
+}
+.login-logo-wrapper {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.login-logo {
+  margin: 10px 0;
+  width: 120px;
+}
+
+.login-form {
+  background: rgba(0, 0, 0, 0.7);
+  backdrop-filter: blur(10px);
+  padding: 20px;
+  border-radius: 10px;
+  width: 350px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.login-form h1 {
+  margin-bottom: 20px;
+  font-size: 28px;
+  font-weight: bold;
+  color: red;
+}
+
+.input-group {
+  margin-bottom: 15px;
+  text-align: left;
+}
+
+.input-group label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: 500;
+}
+
+.input-group input {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+  color: #333;
+}
+.input-group .eye-icon {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  font-size: 20px;
+  color: #ccc;
+}
+.input-group input:focus {
+  border-color: #e50914;
+  outline: none;
+}
+
+.login-form button {
+  width: 100%;
+  padding: 12px;
+  border-radius: 8px;
+  border: none;
+  background-color: #e50914;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.login-form button:hover {
+  background-color: #d40812;
+}
+
+.form-help {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 14px;
+}
+
+.form-help .remember {
+  display: flex;
+  align-items: center;
+}
+
+.form-help .remember input {
+  margin-right: 5px;
+}
+
+.form-switch span {
+  color: #e50914;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.loading-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.7);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+.loading {
+  font-size: 20px;
+  color: #fff;
+}

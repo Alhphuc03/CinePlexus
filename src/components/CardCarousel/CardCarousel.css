@@ -1,0 +1,148 @@
+/* .cards-carousel {
+  margin-top: 50px;
+  margin-bottom: 30px;
+}
+.card-list-carousel .card-carousel:focus {
+  border: 2px solid #ffffff; 
+}
+
+.card-carousel h2 {
+  margin-bottom: 8px;
+  font-size: 26px;
+  font-weight: bold;
+}
+
+.card-list-carousel {
+  display: flex;
+  gap: 10px;
+  overflow-x: scroll;
+}
+.card-list-carousel::-webkit-scrollbar {
+  display: none;
+}
+.card-image-carousel {
+  width: 240px;
+  cursor: pointer;
+}
+.img-card {
+  border-radius: 14px;
+}
+.card-info-carousel {
+  margin-top: 5px;
+  font-size: 18px;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+}
+
+@media (max-width: 800px) {
+  .title-cards-carousel {
+    margin-top: 20px;
+    margin-bottom: 0;
+  }
+  .title-cards-carousel h2 {
+    font-size: 20px;
+  }
+  .card-list-carousel img {
+    width: 200px;
+  }
+  .card-list-carousel p {
+    font-size: 12px;
+  }
+}
+@media (max-width: 500px) {
+  .title-cards-carousel h2 {
+    font-size: 15px;
+  }
+  .card-list-carousel img {
+    width: 165px;
+  }
+  .card-list-carousel p {
+    font-size: 10px;
+  }
+} */
+.cards-carousel {
+  margin-top: 50px;
+  margin-bottom: 30px;
+}
+
+.card-carousel h2 {
+  margin-bottom: 8px;
+  font-size: 26px;
+  font-weight: bold;
+}
+
+.card-list-carousel {
+  display: flex;
+  gap: 10px;
+  overflow-x: scroll;
+  padding-bottom: 10px; /* Thêm padding để tránh cắt nội dung */
+}
+.card-list-carousel::-webkit-scrollbar {
+  display: none;
+}
+
+.card-image-carousel {
+  width: 240px;
+  cursor: pointer;
+}
+.img-card {
+  border-radius: 14px;
+}
+.card-info-carousel {
+  margin-top: 5px;
+  font-size: 18px;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+}
+
+@media (max-width: 1024px) {
+  .card-carousel h2 {
+    font-size: 22px;
+  }
+  .card-list-carousel .card-image-carousel {
+    width: 220px;
+  }
+  .card-info-carousel {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 800px) {
+  .card-carousel h2 {
+    font-size: 20px;
+  }
+  .card-list-carousel .card-image-carousel {
+    width: 200px;
+  }
+  .card-info-carousel {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 500px) {
+  .card-carousel h2 {
+    font-size: 18px;
+  }
+  .card-list-carousel .card-image-carousel {
+    width: 165px;
+  }
+  .card-info-carousel {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 320px) {
+  .card-carousel h2 {
+    font-size: 15px;
+  }
+  .card-list-carousel .card-image-carousel {
+    width: 140px;
+  }
+  .card-info-carousel {
+    font-size: 10px;
+  }
+}

@@ -1,0 +1,134 @@
+.review-item {
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  width: 300px;
+  background-color: #000000;
+  box-shadow: 0 2px 4px rgba(253, 253, 253, 0.5);
+}
+.author-container {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+.rating {
+  font-style: italic;
+  margin-top: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  gap: 5px;
+}
+.author-container .author {
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+.content {
+  font-size: 0.8rem;
+  color: #777777;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+  line-height: 1.6;
+}
+.expand-button {
+  color: #a52121;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+.content.expanded {
+  display: block; /* Hoặc tùy chỉnh theo cách bạn muốn hiển thị nội dung mở rộng */
+  -webkit-line-clamp: none; /* Loại bỏ giới hạn số dòng */
+  white-space: normal; /* Cho phép nội dung xuống dòng tự do */
+}
+.expand-button:hover {
+  color: red;
+}
+
+.avatar {
+  width: 45px !important;
+  height: 45px !important;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+/* Media Queries */
+@media (max-width: 1024px) {
+  .review-item {
+    width: 90%;
+  }
+
+  .author-container .author {
+    font-size: 0.9rem;
+  }
+
+  .content {
+    font-size: 0.9rem;
+  }
+
+  .avatar {
+    width: 40px !important;
+    height: 40px !important;
+  }
+}
+
+@media (max-width: 800px) {
+  .review-item {
+    width: 95%;
+  }
+
+  .author-container .author {
+    font-size: 0.85rem;
+  }
+
+  .content {
+    font-size: 0.85rem;
+  }
+
+  .avatar {
+    width: 35px !important;
+    height: 35px !important;
+  }
+}
+
+@media (max-width: 500px) {
+  .review-item {
+    width: 100%;
+  }
+
+  .author-container .author {
+    font-size: 0.8rem;
+  }
+
+  .content {
+    font-size: 0.8rem;
+  }
+
+  .avatar {
+    width: 30px !important;
+    height: 30px !important;
+  }
+}
+
+@media (max-width: 320px) {
+  .review-item {
+    width: 100%;
+    padding: 5px;
+  }
+
+  .author-container .author {
+    font-size: 0.7rem;
+  }
+
+  .content {
+    font-size: 0.7rem;
+  }
+
+  .avatar {
+    width: 25px !important;
+    height: 25px !important;
+  }
+}

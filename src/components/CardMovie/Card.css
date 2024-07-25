@@ -1,0 +1,252 @@
+/* .cards h2 {
+  margin-bottom: 8px;
+  font-size: 24px;
+  font-weight: bold;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.cards .see-all {
+  font-size: 16px;
+  color: #888;
+  margin-right: 10px;
+}
+
+.cards .see-all:hover {
+  color: #afafaf;
+  cursor: pointer;
+}
+.card-list {
+  display: grid;
+  grid-template-columns: repeat(6, minmax(auto, 1fr));
+  gap: 20px;
+}
+
+.card-list .card {
+  cursor: pointer;
+  margin: auto;
+}
+
+.card-image {
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+.card-image img,
+.card-image {
+  transition: transform 0.3s ease;
+  height: 350px;
+}
+
+.card:hover .card-image img {
+  transform: scale(1.2);
+  border: 5px solid white;
+}
+.card:hover .card-image {
+  border: 2px solid white;
+}
+.card-info .card-title {
+  color: red;
+  font-size: 18px;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+  overflow: hidden;
+}
+.card-sub-info {
+  font-size: 16px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.card-rating {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+  justify-content: center;
+}
+
+.card-rating .icon-star {
+  color: yellow;
+}
+
+@media (max-width: 800px) {
+  .cards {
+    margin-top: 20px;
+    margin-bottom: 0;
+  }
+  .cards h2 {
+    font-size: 20px;
+  }
+  .card-list img {
+    width: 200px;
+  }
+  .card-list p {
+    font-size: 12px;
+  }
+}
+@media (max-width: 500px) {
+  .cards h2 {
+    font-size: 15px;
+  }
+  .list img {
+    width: 165px;
+  }
+  .card-list p {
+    font-size: 10px;
+  }
+} */
+.cards h2 {
+  margin-bottom: 8px;
+  font-size: 24px;
+  font-weight: bold;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.cards .see-all {
+  font-size: 16px;
+  color: #888;
+  margin-right: 10px;
+}
+
+.cards .see-all:hover {
+  color: #afafaf;
+  cursor: pointer;
+}
+.card-list {
+  display: grid;
+  grid-template-columns: repeat(6, minmax(auto, 1fr));
+  gap: 20px;
+}
+
+.card-list .card {
+  cursor: pointer;
+  margin: auto;
+}
+
+.card-image {
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+.card-image img,
+.card-image {
+  transition: transform 0.3s ease;
+  height: 350px;
+}
+
+.card:hover .card-image img {
+  transform: scale(1.2);
+  border: 5px solid white;
+}
+.card:hover .card-image {
+  border: 2px solid white;
+}
+.card-info .card-title {
+  color: red;
+  font-size: 18px;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+  overflow: hidden;
+}
+.card-sub-info {
+  font-size: 16px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.card-rating {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+  justify-content: center;
+}
+
+.card-rating .icon-star {
+  color: yellow;
+}
+
+.load-more-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-top: 10px;
+}
+
+@media (max-width: 1024px) {
+  .cards h2 {
+    font-size: 22px;
+  }
+  .card-list {
+    grid-template-columns: repeat(4, minmax(auto, 1fr));
+  }
+  .card-image img,
+  .card-image {
+    height: 300px;
+  }
+  .card-info .card-title {
+    font-size: 16px;
+  }
+  .card-sub-info {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 800px) {
+  .cards h2 {
+    font-size: 20px;
+  }
+  .card-list {
+    grid-template-columns: repeat(2, minmax(auto, 1fr));
+  }
+  .card-image img,
+  .card-image {
+    height: 250px;
+  }
+  .card-info .card-title {
+    font-size: 14px;
+  }
+  .card-sub-info {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 500px) {
+  .cards h2 {
+    font-size: 18px;
+  }
+  .card-list {
+    grid-template-columns: repeat(2, minmax(auto, 1fr));
+  }
+  .card-image img,
+  .card-image {
+    height: 200px;
+  }
+  .card-info .card-title {
+    font-size: 12px;
+  }
+  .card-sub-info {
+    font-size: 10px;
+  }
+}
+
+@media (max-width: 320px) {
+  .cards h2 {
+    font-size: 15px;
+  }
+  .card-image img,
+  .card-image {
+    height: 150px;
+  }
+  .card-info .card-title {
+    font-size: 10px;
+  }
+  .card-sub-info {
+    font-size: 8px;
+  }
+}

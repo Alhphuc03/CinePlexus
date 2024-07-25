@@ -1,0 +1,407 @@
+/* .tvCard h2 {
+  margin-bottom: 8px;
+  font-size: 24px;
+  font-weight: bold;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.tvCard .see-all {
+  font-size: 16px;
+  color: #888;
+  margin-right: 10px;
+}
+
+.tvCard .see-all:hover {
+  color: #afafaf;
+  cursor: pointer;
+}
+
+.tv-list {
+  display: grid;
+  grid-template-columns: repeat(6, minmax(auto, 1fr));
+  gap: 20px;
+}
+
+.tv-list .cardTv {
+  cursor: pointer;
+  margin: auto;
+}
+
+.tv-image {
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+.tv-image img,
+.tv-image {
+  transition: transform 0.3s ease;
+  height: 350px;
+}
+
+.cardTv:hover .tv-image img {
+  transform: scale(1.2);
+  border: 5px solid white;
+}
+
+.cardTv:hover .tv-image {
+  border: 2px solid white;
+}
+
+.tv-info .tv-title {
+  margin-top: 5px;
+  color: red;
+  font-size: 18px;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+  overflow: hidden;
+}
+
+.tv-sub-info {
+  font-size: 16px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.tv-rating {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+  justify-content: center;
+}
+
+.tv-rating .icon-star {
+  color: yellow;
+}
+
+.load-more-btn {
+  display: block;
+  margin: 10px auto;
+  padding: 5px 35px;
+  color: #ffffff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.load-more-btn:hover {
+  color: grey;
+  opacity: 0.5;
+}
+
+.icon-more {
+  margin: 0 auto;
+  font-size: 20px;
+}
+@media (max-width: 800px) {
+  .tvCard {
+    margin-top: 20px;
+    margin-bottom: 0;
+  }
+
+  .tvCard h2 {
+    font-size: 20px;
+  }
+
+  .tv-list {
+    grid-template-columns: repeat(3, minmax(auto, 1fr));
+  }
+  .tv-list p {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 500px) {
+  .tvCard h2 {
+    font-size: 15px;
+  }
+  .tv-list {
+    grid-template-columns: repeat(2, minmax(auto, 1fr));
+  }
+} */
+/* CardTv.css */
+/* .tvCard h2 {
+  margin-bottom: 8px;
+  font-size: 24px;
+  font-weight: bold;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.tvCard .see-all {
+  font-size: 16px;
+  color: #888;
+  margin-right: 10px;
+}
+
+.tvCard .see-all:hover {
+  color: #afafaf;
+  cursor: pointer;
+}
+
+.tv-list {
+  display: grid;
+  grid-template-columns: repeat(6, minmax(auto, 1fr));
+  gap: 20px;
+}
+
+.tv-list .cardTV {
+  cursor: pointer;
+  margin: auto;
+}
+
+.tv-image {
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+.tv-image img,
+.tv-image {
+  transition: transform 0.3s ease;
+  height: 350px;
+  width: 100%;
+}
+
+.cardTV:hover .tv-image img {
+  transform: scale(1.2);
+  border: 5px solid white;
+}
+
+.cardTV:hover .tv-image {
+  border: 2px solid white;
+}
+
+.tv-info .tv-title {
+  margin-top: 5px;
+  color: red;
+  font-size: 18px;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+  overflow: hidden;
+}
+
+.tv-sub-info {
+  font-size: 16px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.tv-rating {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+  justify-content: center;
+}
+
+.tv-rating .icon-star {
+  color: yellow;
+}
+
+.load-more-btn {
+  display: block;
+  margin: 10px auto;
+  padding: 5px 35px;
+  color: #ffffff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.load-more-btn:hover {
+  color: grey;
+  opacity: 0.5;
+}
+
+.icon-more {
+  margin: 0 auto;
+  font-size: 20px;
+}
+@media (max-width: 800px) {
+  .tvCard {
+    margin-top: 20px;
+    margin-bottom: 0;
+  }
+
+  .tvCard h2 {
+    font-size: 20px;
+  }
+
+  .tv-list {
+    grid-template-columns: repeat(3, minmax(auto, 1fr));
+  }
+  .tv-list p {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 500px) {
+  .tvCard h2 {
+    font-size: 15px;
+  }
+  .tv-list {
+    grid-template-columns: repeat(2, minmax(auto, 1fr));
+  }
+} */
+.tvCard h2 {
+  margin-bottom: 8px;
+  font-size: 24px;
+  font-weight: bold;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.tvCard .see-all {
+  font-size: 16px;
+  color: #888;
+  margin-right: 10px;
+}
+
+.tvCard .see-all:hover {
+  color: #afafaf;
+  cursor: pointer;
+}
+
+.tv-list {
+  display: grid;
+  grid-template-columns: repeat(6, minmax(auto, 1fr));
+  gap: 20px;
+}
+
+.tv-list .cardTV {
+  cursor: pointer;
+  margin: auto;
+}
+
+.tv-image {
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+.tv-image img,
+.tv-image {
+  transition: transform 0.3s ease;
+  height: 350px;
+  width: 100%;
+}
+
+.cardTV:hover .tv-image img {
+  transform: scale(1.2);
+  border: 5px solid white;
+}
+
+.cardTV:hover .tv-image {
+  border: 2px solid white;
+}
+
+.tv-info .tv-title {
+  color: red;
+  font-size: 18px;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+  overflow: hidden;
+}
+
+.tv-sub-info {
+  font-size: 16px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.tv-rating {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+  justify-content: center;
+}
+
+.tv-rating .icon-star {
+  color: yellow;
+}
+.load-more-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-top: 10px;
+}
+@media (max-width: 1024px) {
+  .tvCard h2 {
+    font-size: 22px;
+  }
+  .tv-list {
+    grid-template-columns: repeat(4, minmax(auto, 1fr));
+  }
+  .tv-image img,
+  .tv-image {
+    height: 300px;
+  }
+  .tv-info .tv-title {
+    font-size: 16px;
+  }
+  .tv-sub-info {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 800px) {
+  .tvCard h2 {
+    font-size: 20px;
+  }
+  .tv-list {
+    grid-template-columns: repeat(2, minmax(auto, 1fr));
+  }
+  .tv-image img,
+  .tv-image {
+    height: 250px;
+  }
+  .tv-info .tv-title {
+    font-size: 14px;
+  }
+  .tv-sub-info {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 500px) {
+  .tvCard h2 {
+    font-size: 18px;
+  }
+  .tv-list {
+    grid-template-columns: repeat(2, minmax(auto, 1fr));
+  }
+  .tv-image img,
+  .tv-image {
+    /* height: 200px; */
+    width: 100%;
+  }
+  .tv-info .tv-title {
+    font-size: 12px;
+  }
+  .tv-sub-info {
+    font-size: 10px;
+  }
+}
+
+@media (max-width: 320px) {
+  .tvCard h2 {
+    font-size: 15px;
+  }
+  .tv-image img,
+  .tv-image {
+    height: 150px;
+  }
+  .tv-info .tv-title {
+    font-size: 10px;
+  }
+  .tv-sub-info {
+    font-size: 8px;
+  }
+}

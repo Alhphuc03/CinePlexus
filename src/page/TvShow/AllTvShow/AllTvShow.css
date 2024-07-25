@@ -1,0 +1,110 @@
+.all-tv-show {
+  display: flex;
+  margin-top: 120px;
+  padding: 0 6%;
+  width: 100%;
+}
+
+.left-content {
+  width: 300px;
+  margin-right: 20px;
+}
+.left-content h2 {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.right-content {
+  width: 100%;
+  padding: 0 10px;
+}
+.right-content .see-all,
+.right-content .tvCard h2 {
+  display: none !important;
+}
+
+.right-content .tv-list {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(auto, 1fr)) !important;
+  gap: 20px;
+}
+
+.tv-image img,
+.tv-image {
+  transition: transform 0.3s ease;
+  height: 300px !important;
+}
+
+/* Responsive Styles */
+
+/* For screens up to 1023px wide */
+@media (max-width: 1024px) {
+  .left-content {
+    width: 250px;
+  }
+
+  .right-content {
+    padding: 0 5px;
+  }
+
+  .right-content .tv-list {
+    grid-template-columns: repeat(4, minmax(auto, 1fr));
+    margin-top: 20px;
+  }
+}
+
+/* For screens up to 800px wide */
+@media (max-width: 800px) {
+  .all-tv-show {
+    flex-direction: column;
+    padding: 0 3%;
+  }
+
+  .left-content {
+    width: 100%;
+    margin-right: 0;
+  }
+
+  .right-content {
+    padding: 0;
+  }
+
+  .right-content .tv-list {
+    grid-template-columns: repeat(3, minmax(auto, 1fr));
+    margin-top: 20px;
+  }
+}
+
+/* For screens up to 500px wide */
+@media (max-width: 500px) {
+  .left-content {
+    width: 100%;
+  }
+
+  .right-content .tv-list {
+    grid-template-columns: repeat(2, minmax(auto, 1fr));
+    margin-top: 20px;
+  }
+
+  .tv-image img,
+  .tv-image {
+    height: 200px !important;
+  }
+}
+
+/* For screens up to 320px wide */
+@media (max-width: 320px) {
+  .left-content {
+    font-size: 14px; /* Giảm kích thước font cho màn hình nhỏ */
+  }
+
+  .right-content .tv-list {
+    grid-template-columns: 1fr;
+    margin-top: 20px;
+  }
+
+  .tv-image img,
+  .tv-image {
+    height: 150px !important;
+  }
+}
