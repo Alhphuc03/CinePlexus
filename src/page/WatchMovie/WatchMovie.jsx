@@ -17,7 +17,7 @@ const WatchMovie = () => {
     const fetchMovieData = async () => {
       setLoading(true);
       try {
-        const response = await tmdbApi.getMovieDetail(id);
+        const response = await tmdbApi.getMovieDetails(id);
         setMovieDetail(response);
 
         // Tìm kiếm phim theo tiêu đề

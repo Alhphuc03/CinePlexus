@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const API_KEY = "5744c461b4e9a5730311b1bacdc9a337";
+const API_KEY = import.meta.env.VITE_TMDB_ACCESS_TOKEN;
 const BASE_URL = "https://api.themoviedb.org/3";
 
 const tmdbApi = {
@@ -188,7 +188,7 @@ const tmdbApi = {
   },
 
   // Thêm đánh giá cho một bộ phim
-  addRating: async (mediaType,movieId, rating) => {
+  addRating: async (mediaType, movieId, rating) => {
     const sessionId = localStorage.getItem("sessionId");
     try {
       const response = await axios.post(

@@ -13,15 +13,18 @@
   font-size: 2.5rem;
   width: 100%;
   color: red;
-  background-color: rgba(0, 0, 0, 0.7); /* Đặt độ mờ cho màu nền */
+  background-color: rgba(0, 0, 0, 0.7);
 }
+
 .watch-movie .icon-back {
   position: absolute;
   top: 2%;
   left: 2%;
   transform: translate(-50%, -2%);
   font-size: 2.5rem;
+  cursor: pointer;
 }
+
 .img-movie-backdrop {
   width: 100%;
   height: 100vh;
@@ -33,14 +36,21 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 60%;
+  width: 80%;
+  max-width: 1200px;
   height: 70vh;
+  max-height: 700px;
+  background: rgba(0, 0, 0, 0.8);
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+  overflow: hidden;
 }
 
 .react-player {
   width: 100% !important;
   height: 100% !important;
 }
+
 .loading-container,
 .error,
 .no-movie {
@@ -48,7 +58,6 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  /* height: 100vh; */
   font-size: 1.5rem;
   color: red;
 }
@@ -56,4 +65,105 @@
 .loading-gif {
   width: 100px;
   height: 100px;
+}
+
+@media (min-width: 1024px) {
+  .watch-movie h1 {
+    font-size: 3rem;
+  }
+
+  .watch-movie .icon-back {
+    font-size: 3rem;
+  }
+
+  .watch-movie-container {
+    width: 70%;
+    height: 60vh;
+  }
+
+  .loading-gif {
+    width: 120px;
+    height: 120px;
+  }
+}
+
+@media (max-width: 1024px) and (min-width: 800px) {
+  .watch-movie h1 {
+    font-size: 2.2rem;
+  }
+
+  .watch-movie .icon-back {
+    font-size: 2.2rem;
+  }
+
+  .watch-movie-container {
+    width: 75%;
+    height: 65vh;
+  }
+
+  .loading-gif {
+    width: 110px;
+    height: 110px;
+  }
+}
+
+@media (max-width: 800px) and (min-width: 500px) {
+  .watch-movie h1 {
+    font-size: 1.8rem;
+  }
+
+  .watch-movie .icon-back {
+    font-size: 2rem;
+  }
+
+  .watch-movie-container {
+    width: 80%;
+    height: 70vh;
+  }
+
+  .loading-gif {
+    width: 100px;
+    height: 100px;
+  }
+}
+
+@media (max-width: 500px) {
+  .watch-movie h1 {
+    font-size: 1.5rem;
+    padding: 5px 0;
+  }
+
+  .watch-movie .icon-back {
+    font-size: 1.8rem;
+  }
+
+  .watch-movie-container {
+    width: 90%;
+    height: 75vh;
+  }
+
+  .loading-gif {
+    width: 80px;
+    height: 80px;
+  }
+}
+
+@media (max-width: 320px) {
+  .watch-movie h1 {
+    font-size: 1.2rem;
+  }
+
+  .watch-movie .icon-back {
+    font-size: 1.5rem;
+  }
+
+  .watch-movie-container {
+    width: 100%;
+    height: 80vh;
+  }
+
+  .loading-gif {
+    width: 60px;
+    height: 60px;
+  }
 }
